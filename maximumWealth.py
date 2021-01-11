@@ -44,3 +44,4 @@ class MaximumWealth:
             maxWealth = max(maxWealth, sum(i))
         return maxWealth
 
+# I have learned how to use the max() and sum() functions. The max() function takes the maximum value from the stuff you give it. The sum() function takes all the inputs you give it and adds them together, and  it outputs the sum of all the inputs.
