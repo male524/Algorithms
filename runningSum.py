@@ -37,3 +37,5 @@ class RunningSum:
         for i in range(1, len(nums)):
             numbers[i] = numbers[i-1] + nums[i]
         return numbers
+
+# I have learned that I have to create a space in a list before refrencing the index of that space in the list.
