@@ -29,7 +29,11 @@ Constraints:
 """
 
 class RunningSum:
-    def runningSum(self, nums: List[int]) -> List[int]:
+    def runningSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
         numbers = []
         for i in range(len(nums)):
             numbers.append(i)

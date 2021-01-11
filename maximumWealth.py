@@ -38,7 +38,11 @@ n == accounts[i].length
 """
 
 class MaximumWealth:
-    def maximumWealth(self, accounts: List[List[int]]) -> int:
+    def maximumWealth(self, accounts):
+        """
+        :type accounts: List[List[int]]
+        :rtype: int
+        """
         maxWealth = 0
         for i in accounts:
             maxWealth = max(maxWealth, sum(i))
