@@ -27,6 +27,8 @@ Constraints:
 1 <= nums.length <= 1000
 -10^6 <= nums[i] <= 10^6
 """
+from typing import List
+
 class RunningSum:
     def runningSum(self, nums: List[int]) -> List[int]:
         numbers = []
