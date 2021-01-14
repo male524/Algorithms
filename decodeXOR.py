@@ -29,7 +29,7 @@ encoded.length == n - 1
 0 <= first <= 105
 """
 
-class Solution(object):
+class Decode(object):
     def decode(self, encoded, first):
         """
         :type encoded: List[int]
