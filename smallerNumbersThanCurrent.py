@@ -34,7 +34,7 @@ Constraints:
 0 <= nums[i] <= 100
 """
 
-class Solution(object):
+class SmallerNumbersThanCurrent(object):
     def smallerNumbersThanCurrent(self, nums):
         """
         :type nums: List[int]
