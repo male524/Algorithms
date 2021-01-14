@@ -41,17 +41,13 @@ class NumberOfSteps(object):
         :type num: int
         :rtype: int
         """
-        numValue = num
         stepCount = 0
-        while True:
-            if numValue == 0:
-                break
-            elif numValue % 2 == 0:
-                numValue = numValue / 2
-                stepCount += 1
+        while num != 0:
+            if num % 2 == 0:
+                num /= 2
             else:
-                numValue = numValue - 1
-                stepCount += 1
+                num -= 1
+            stepCount += 1
         return stepCount
 
 # I learned how to use modulo to check if a integer is odd or even.
