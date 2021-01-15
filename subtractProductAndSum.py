@@ -28,7 +28,7 @@ Constraints:
 
 from functools import reduce
 
-class Solution(object):
+class SubtractProductAndSum(object):
     def subtractProductAndSum(self, n):
         """
         :type n: int
