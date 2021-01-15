@@ -28,19 +28,15 @@ Constraints:
 -10^6 <= nums[i] <= 10^6
 """
 
-class RunningSum:
-    def runningSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
-        numbers = []
-        for i in range(len(nums)):
-            numbers.append(i)
+from typing import List
 
-        numbers[0] = nums[0]
+
+class RunningSum:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        numbers = []
+        numbers.append(nums[0])
         for i in range(1, len(nums)):
-            numbers[i] = numbers[i-1] + nums[i]
+            numbers.append(numbers[i-1] + nums[i])
         return numbers
 
-# I have learned that I have to create a space in a list before refrencing the index of that space in the list.
+# I have learned that I can't set a value to a list to an index that hasn't been created.

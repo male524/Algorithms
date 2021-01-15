@@ -30,12 +30,11 @@ Constraints:
 1 <= nums[i] <= 100
 """
 
+from typing import List
+
+
 class NumIdenticalPairs(object):
-    def numIdenticalPairs(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+    def numIdenticalPairs(self, nums: List[int]) -> int:
         pairs = 0
         for i in range(len(nums)):
             for j in range(len(nums)):

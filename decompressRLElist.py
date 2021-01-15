@@ -28,6 +28,9 @@ nums.length % 2 == 0
 1 <= nums[i] <= 100
 """
 
+from typing import List
+
+
 class Solution:
     def decompressRLElist(self, nums: List[int]) -> List[int]:
         result = []

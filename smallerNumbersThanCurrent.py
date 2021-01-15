@@ -34,12 +34,11 @@ Constraints:
 0 <= nums[i] <= 100
 """
 
+from typing import List
+
+
 class SmallerNumbersThanCurrent(object):
-    def smallerNumbersThanCurrent(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
         results = []
         numberOf = 0
         for i in nums:

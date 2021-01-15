@@ -24,12 +24,7 @@ All the characters of jewels are unique.
 """
 
 class NumJewelsInStones(object):
-    def numJewelsInStones(self, jewels, stones):
-        """
-        :type jewels: str
-        :type stones: str
-        :rtype: int
-        """
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
         numJewels = 0
         for i in jewels:
             countJewels = stones.count(i)

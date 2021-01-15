@@ -36,11 +36,7 @@ Constraints:
 """
 
 class NumberOfSteps(object):
-    def numberOfSteps(self, num):
-        """
-        :type num: int
-        :rtype: int
-        """
+    def numberOfSteps (self, num: int) -> int:
         stepCount = 0
         while num != 0:
             if num % 2 == 0:

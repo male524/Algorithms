@@ -34,13 +34,11 @@ Constraints:
 1 <= extraCandies <= 50
 """
 
+from typing import List
+
+
 class KidsWithCandies(object):
-    def kidsWithCandies(self, candies, extraCandies):
-        """
-        :type candies: List[int]
-        :type extraCandies: int
-        :rtype: List[bool]
-        """
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
         check = []
         for i in range(len(candies)):
             check.append(True)
@@ -49,8 +47,6 @@ class KidsWithCandies(object):
             for j in range(len(candies)):
                 if sumOfCandies < candies[j]:
                     check[i] = False
-                else:
-                    pass
         return check
         
 # I didn't really learn anything this time, I just used stuff I already knew.

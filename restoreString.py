@@ -42,13 +42,11 @@ s contains only lower-case English letters.
 All values of indices are unique (i.e. indices is a permutation of the integers from 0 to n - 1).
 """
 
+from typing import List
+
+
 class RestoreString(object):
-    def restoreString(self, s, indices):
-        """
-        :type s: str
-        :type indices: List[int]
-        :rtype: str
-        """
+    def restoreString(self, s: str, indices: List[int]) -> str:
         holderList = []
         for i in range(len(s)):
             holderList.append(i)

@@ -32,11 +32,7 @@ command consists of "G", "()", and/or "(al)" in some order.
 """
 
 class Interpret(object):
-    def interpret(self, command):
-        """
-        :type command: str
-        :rtype: str
-        """
+    def interpret(self, command: str) -> str:
         halfRep = command.replace("()", "o")
         fullRep = halfRep.replace("(al)", "al")
         return fullRep

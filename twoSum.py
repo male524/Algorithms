@@ -31,13 +31,11 @@ Constraints:
 Only one valid answer exists.
 """
 
+from typing import List
+
+
 class TwoSum(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
         h = {}
         for i, num in enumerate(nums):
             n = target - num

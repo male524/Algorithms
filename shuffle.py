@@ -28,13 +28,11 @@ nums.length == 2n
 1 <= nums[i] <= 10^3
 """
 
+from typing import List
+
+
 class Shuffle(object):
-    def shuffle(self, nums, n):
-        """
-        :type nums: List[int]
-        :type n: int
-        :rtype: List[int]
-        """
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
         shuffledList = []
         for i in range(len(nums)//2):
             shuffledList.append(nums[i])

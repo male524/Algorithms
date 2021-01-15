@@ -29,13 +29,11 @@ encoded.length == n - 1
 0 <= first <= 105
 """
 
+from typing import List
+
+
 class Decode(object):
-    def decode(self, encoded, first):
-        """
-        :type encoded: List[int]
-        :type first: int
-        :rtype: List[int]
-        """
+    def decode(self, encoded: List[int], first: int) -> List[int]:
         decoded = [first]
         for i in encoded:
             decoded.append(decoded[-1] ^ i)

@@ -31,24 +31,14 @@ carType is 1, 2, or 3
 At most 1000 calls will be made to addCar
 """
 
-class ParkingSystem(object):
-    
-    def __init__(self, big, medium, small):
-        """
-        :type big: int
-        :type medium: int
-        :type small: int
-        """
+class ParkingSystem:
+
+    def __init__(self, big: int, medium: int, small: int):
         self.big = big
         self.medium = medium
         self.small = small
-        
 
-    def addCar(self, carType):
-        """
-        :type carType: int
-        :rtype: bool
-        """
+    def addCar(self, carType: int) -> bool:
         if carType == 1 and self.big:
             self.big -= 1
             return True
@@ -63,4 +53,4 @@ class ParkingSystem(object):
             
         return False
 
-# I learned how to interact with classes.
+# I used stuff i already knew to solve this.

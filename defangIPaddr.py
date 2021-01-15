@@ -22,11 +22,7 @@ The given address is a valid IPv4 address.
 """
 
 class DefangIPAddr(object):
-    def defangIPaddr(self, address):
-        """
-        :type address: str
-        :rtype: str
-        """
+    def defangIPaddr(self, address: str) -> str:
         defangedIP = address.replace(".", "[.]")
         return defangedIP
 

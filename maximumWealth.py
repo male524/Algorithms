@@ -37,12 +37,11 @@ n == accounts[i].length
 1 <= accounts[i][j] <= 100
 """
 
+from typing import List
+
+
 class MaximumWealth:
-    def maximumWealth(self, accounts):
-        """
-        :type accounts: List[List[int]]
-        :rtype: int
-        """
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
         maxWealth = 0
         for i in accounts:
             maxWealth = max(maxWealth, sum(i))

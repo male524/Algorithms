@@ -29,11 +29,7 @@ Constraints:
 from functools import reduce
 
 class SubtractProductAndSum(object):
-    def subtractProductAndSum(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+    def subtractProductAndSum(self, n: int) -> int:
         listN = []
         n = str(n)
         for i in n:
