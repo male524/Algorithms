@@ -36,15 +36,17 @@ class Solution:
         result = []
         checkerList = []
         skip = 0
-        for i in nums:
+        for i in range(len(nums)):
             if skip % 2 == 1:
                 pass
             else:
-                checkerList.append(nums[i - 1])
                 checkerList.append(nums[i])
+                checkerList.append(nums[i + 1])
                 freq = checkerList[0]
                 val = checkerList[1]
-                result.extend([val] * freq)
+                result += [val] * freq
             skip += 1
             checkerList.clear()
         return result
+
+# I learned how to use the extend() function to add multiple of the same item to a list. I also learned how to add multiple of the same item to a list by using +=.
