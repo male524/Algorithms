@@ -26,10 +26,17 @@ Input: 701
 Output: "ZY"
 """
 
-class Solution(object):
+class ConvertToTitle(object):
     def convertToTitle(self, n):
         """
         :type n: int
         :rtype: str
         """
-        
+        result = ''
+        while n != 0:
+            result = chr(ord('A') + ((n - 1) % 26)) + result
+            n = (n - 1) // 26
+        return result
+
+# I learned how to convert unicode into a character using the chr() function, and how to convert a string into unicode using the ord() function.
+# By the way, this I didn't come up with the concept for this code, but I can explain what each part does. I really don't think this should be marked as an easy problem.
