@@ -34,9 +34,5 @@ s is between "A" and "FXSHRXW".
 """
 
 class TitleToNumber(object):
-    def titleToNumber(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        
+    def titleToNumber(self, s: str) -> int:
+        pass
