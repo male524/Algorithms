@@ -66,3 +66,5 @@ class CountConsistentStrings:
             if TFConstStr[i] == True:
                 result += 1
         return result
+
+# I learned how to check if a variable exists with local().
