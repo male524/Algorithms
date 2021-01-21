@@ -49,3 +49,8 @@ class Reverse:
             return 0
         else:
             return revInt
+
+# I used things that I've already learned to solve this one.
+# It took me longer than I'd like to admit... it took me probably around an hour and a half.
+# I had trouble with checking if the input number was too big or too small.
+# It turned out I had a little order of operations typo and a typo in the variable my code was checking, I kept checking the wrong variable.
