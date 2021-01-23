@@ -43,7 +43,7 @@ class CountConsistentStrings:
         for i in words:
             TFConstStr.append(True)
         char = ord("a")
-        ordOf = 0
+        ordOf = int()
         for i in range(26):
             for j in allowed:
                 if ord(j) == char:
