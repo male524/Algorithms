@@ -43,11 +43,12 @@ class CountConsistentStrings:
         for i in words:
             TFConstStr.append(True)
         char = ord("a")
+        ordOf = 0
         for i in range(26):
             for j in allowed:
                 if ord(j) == char:
                     ordOf = ord(j)
-            if "ordOf" in locals():
+            if ordOf != 0:
                 if ordOf == char:
                     pass
                 else:
@@ -67,4 +68,5 @@ class CountConsistentStrings:
                 result += 1
         return result
 
+print(CountConsistentStrings.countConsistentStrings(1, "abc", ["a","b","c","ab","ac","bc","abc"]))
 # I learned how to check if a variable exists with local().
