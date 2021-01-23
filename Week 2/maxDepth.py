@@ -68,3 +68,6 @@ class Solution:
         return max(nestList)
 
 print(Solution.maxDepth(1, "(1+(2*3)+((8())/4))+1"))
+
+# I used stuff I already knew to solve this.
+# I think this took me around 20 minutes since I recycled some of my old code for a similar problem
