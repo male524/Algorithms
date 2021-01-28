@@ -50,3 +50,4 @@ class Solution:
         return sum(matchesList)
 
 print(Solution.numberOfMatches(1, 7))
+# This took around 10-15 minutes
