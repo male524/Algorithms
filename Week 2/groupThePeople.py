@@ -42,7 +42,7 @@ class GroupThePeople:
             if i not in numberOfLists:
                 numberOfLists[i] = 1
             else:
-                numberOfLists[i] = numberOfLists[i] + 1
+                numberOfLists[i] += 1
         keysList = list(numberOfLists)
         valuesList = list(numberOfLists.values())
         for i in range(len(keysList)):
