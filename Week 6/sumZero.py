@@ -30,10 +30,13 @@ from typing import List
 class Solution:
     def sumZero(self, n: int) -> List[int]:
         sumList = []
+        add = 1
         if n % 2 == 1:
             sumList.append(0)
-        for i in range(n):
-            print(i)
+        for i in range(n // 2):
+            sumList.append(add)
+            sumList.append(-add)
+            add += 1
         return sumList
 
 print(Solution.sumZero(1, 5))
