@@ -60,4 +60,3 @@ class Solution:
                 arr[k] = R[j]
                 j += 1
                 k += 1
-        
