@@ -20,6 +20,15 @@ from typing import List
 
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
-        setNum = set(nums)
-        for i in range(len(nums)):
-            pass
+        setNums = set(nums)
+        maxNum = len(nums) + 1
+        ghostNums = list()
+        for i in range(1, maxNum):
+            ghostNums.append(i)
+        for i in range(len(setNums)):
+            if setNums[i] in ghostNums:
+                ghostNums.remove(nums[i])
+        return ghostNums
+
+nums = [4,3,2,7,8,2,3,1]
+print(len(nums))
