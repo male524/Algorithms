@@ -54,7 +54,7 @@ class Solution:
                 j += 1
                 k += 1
 
-print(Solution.sortArray(1, [5,1,1,2,0,0]))
+print(Solution.sortArray(1, [5,1,1,2,0,0,324,544,65,76,76,856,45,3453,43,546,6456,3543,434,546,56,575,675,643,34545,45,656,5,5,5,54533,33,3,3,3,5,78,8,8]))
 
 # I used the built in sorting function to solve this problem
 # This took like 1 minute since I kinda cheated
