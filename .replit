@@ -1,2 +1,2 @@
 language = "bash"
-run = ""
+run = "python 'Week 11'/searchInsert.py"
