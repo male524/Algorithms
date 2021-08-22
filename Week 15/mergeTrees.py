@@ -4,23 +4,16 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from platform import node
+
+
 class Solution:
-    def __init__(self):
-        self.tree1 = []
-        self.tree2 = []
-        self.which = True
-    def traverse(self, root: Optional[TreeNode]):
-        if root == None:
-            return
-        if self.which == True:
-            self.tree1.append(root.val)
-            self.traverse(root.left)
-            self.traverse(root.right)
-        else:
-            self.tree2.append(root.val)
-            self.traverse(root.left)
-            self.traverse(root.right)
-    def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
-        self.traverse(root1)
-        self.which = False
-        self.traverse(root2)
+    def mergeTrees(self, root1: node, root2: node) -> node:
+        if root1 == None:
+            return root2
+        if root2 == None:
+            return root1
+        root1.val += root2.val
+        root1.left = self.mergeTrees(root1.left, root2.left)
+        root1.right = self.mergeTrees(root1.right, root2.right)
+        return root1
